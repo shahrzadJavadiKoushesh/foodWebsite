@@ -6,9 +6,9 @@
                 <div class="name">
                     {{food.name}}
                 </div>
-                <!-- <span class="favorite" {{food.favorite ? '': 'not'}}>
+                <span class="favorite {{food.favorite ? '': 'not'}}">
                     ❤
-                </span> -->
+                </span>
                 <!-- <div>
                     <ngx-star-rating []="food.stars" [id]="'rating'" [disabled]="true"></ngx-star-rating>
                 </div> -->
@@ -24,13 +24,12 @@
                         </span>
                         {{food.cookTime}}
                     </div>
-                    <div class="price">
-                        <span>
-                            {{food.price | currency}}
-                        </span>
-                    </div>
                 </div>
-                
+                <div class="price">
+                    <span>
+                        {{food.price | currency}}
+                    </span>
+                </div>
             </div>
         </a>
     </li>
