@@ -7,6 +7,7 @@ import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { NgxStarRatingModule } from 'ngx-star-rating';
 import { SearchComponent } from './search/search.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { SearchComponent } from './search/search.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgxStarRatingModule
+    NgxStarRatingModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
